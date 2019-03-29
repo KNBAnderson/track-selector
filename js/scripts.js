@@ -30,7 +30,24 @@ $(function() {
     var answer3 = parseInt($("input:radio[name=question3]:checked").val());
     var answer4 = parseInt($("input:radio[name=question4]:checked").val());
     var answer5 = parseInt($("input:radio[name=question5]:checked").val());
-    console.log(answer2, answer3, answer4, answer5);
+    var average = findAverage(answer2, answer3, answer4, answer5)
+
+    if (average === 1) {
+      $('form').hide();
+      $('#css, #languages').show();
+    } else if (average === 2) {
+      $('form').hide();
+      $('#c, #languages').show();
+    } else if (average === 3) {
+      $('form').hide();
+      $('#java, #languages').show();
+    } else if (average === 4) {
+      $('form').hide();
+      $('#php, #languages').show();
+    } else if (average === 5) {
+      $('form').hide();
+      $('#ruby, #languages').show();
+    }
     e.preventDefault();
 
   })
