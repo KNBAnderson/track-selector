@@ -7,6 +7,6 @@ body {
   margin-top: 20px;
 }
 
-#question1, .further-questions, .languages, .language {
+#question1, .further-questions, #languages, .language {
   display: none;
 }
