@@ -13,23 +13,22 @@ $(function() {
     var answer = $("#dropdown").val()
     console.log(answer);
     if (answer === '1') {
-      console.log('1 is working');
       $('.further-questions').hide();
-      $('#css, #languages').show();
-      // $('#languages').show();
+      $('#css, #languages, #start-over').show();
     } else if (answer === '0') {
-      console.log('0 is working');
-      $('#languages, .language').hide();
+      $('#languages, .language, #start-over').hide();
       $('.further-questions').show();
     } else {
       console.log('Question 1 has a value error');
     }
-  })
+  });
   //if user selects front end, show CSS/Design Track
   //else show the next questions
 
   //submit
     //get average of answers and show coresponding track
 
-
+  $('button[name=start-over]').click(function() {
+    location.reload();
+  });
 });
