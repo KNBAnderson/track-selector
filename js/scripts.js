@@ -4,6 +4,11 @@ function findAverage(num1, num2, num3, num4) {
 }
 
 $(function() {
+
+  $('button[name=start]').click(function() {
+    $('button[name=start]').hide();
+    $('#question1').show();
+  });
   //if user selects front end, show CSS/Design Track
   //else show the next questions
 

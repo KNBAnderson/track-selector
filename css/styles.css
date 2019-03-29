@@ -6,3 +6,7 @@ body {
   background-color: orange;
   margin-top: 20px;
 }
+
+#question1, .further-questions, .languages, .language {
+  display: none;
+}
