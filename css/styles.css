@@ -1,15 +1,18 @@
 body {
-  background-color: red;
+  background-color: #E6EBE0;
   font-family: 'Rajdhani', sans-serif;
   font-weight: bold;
+  color: #2B303A;
 }
 
-h1, h3, {
+h1, h3 {
   font-family: 'Ruda', sans-serif;
+  color: black;
 }
 
 .section {
-  background-color: orange;
+  background-color: #9BC1BC;
+  border-top: 3px double #ED6A5A;
   margin-top: 20px;
   padding: 40px;
 }
@@ -33,6 +36,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid #ED6A5A;
 }
 
 button[name='start-over'] {
