@@ -21,9 +21,9 @@ h1, h3 {
   margin: 20px;
 }
 
-/* #question1, .further-questions, #languages, .language {
+#question1, .further-questions, #languages, .language {
   display: none;
-} */
+}
 
 img {
   display: block;
@@ -37,6 +37,16 @@ button {
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #ED6A5A;
+  background-color: #C2C1C2;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  border: 2px solid #C2C1C2;
+}
+
+.form-control {
+  color: black;
 }
 
 button[name='start-over'] {
