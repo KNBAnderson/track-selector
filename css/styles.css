@@ -5,6 +5,7 @@ body {
 .section {
   background-color: orange;
   margin-top: 20px;
+  padding: 20px;
 }
 
 #question1, .further-questions, #languages, .language {
