@@ -14,9 +14,9 @@ $(function() {
     console.log(answer);
     if (answer === '1') {
       $('.further-questions').hide();
-      $('#css, #languages, #start-over').show();
+      $('#css, #languages').show();
     } else if (answer === '0') {
-      $('#languages, .language, #start-over').hide();
+      $('#languages, .language').hide();
       $('.further-questions').show();
     } else {
       console.log('Question 1 has a value error');
