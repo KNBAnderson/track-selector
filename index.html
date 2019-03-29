@@ -9,44 +9,69 @@
   <title>Epicodus Track Selector</title>
 </head>
 
-  <body>
-    <div class="container">
+<body>
+  <div class="container">
+    <div id="header" class="section">
       <h1>Epicodus Track Selector</h1>
       <p>Are you thinking about learning programming but not sure where to start? Take this quiz to find out which laguages might be best for you!</p>
-      <form>
-        <div id="question1">
-          <label for="">Are you interested in frontend or back end programming?</label>
-          <select class="form-control" id="question1">
-            <option value="1">Front end</option>
-            <option value="2">Back end</option>
-            <option value="3">Both</option>
-            <option value="4">I'm not sure</option>
-          </select>
-        </div>
-
-        <div id="question2">
-//What kind of company would you like to work for?
-
-//What kind of projects do you like to work on
-
-//Do you want to do something established or new tech
-
-//Do you want your projects to be visually creative or logically creative?
-        </div>
-      </form>
-      <!-- C#
-C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
-
-JAVA
-Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
-
-PHP
-PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.
-
-RUBY
-Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
-
-Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.  -->
+      <button type="button" name="start">Start the quiz!</button>
     </div>
-  </body>
+    <form>
+      <div class="section" id="question1">
+        <label for="">Are you interested in frontend or back end programming?</label>
+        <select class="form-control" id="question1">
+          <option value="1">Front end</option>
+          <option value="2">Back end</option>
+          <option value="3">Both</option>
+          <option value="4">I'm not sure</option>
+        </select>
+      </div>
+
+      <div class="section further-questions">
+        <div class="question2">
+          //What kind of company would you like to work for?
+
+        </div>
+        <div id='question3'>
+          //What kind of projects do you like to work on
+
+        </div>
+
+        <div id="question4">
+          //Do you want to do something established or new tech
+
+        </div>
+
+        <div id="question5">
+          //Do you want your projects to be visually creative or logically creative?
+
+        </div>
+      </div>
+    </form>
+
+    <div class="section">
+      <div class="language" id="css">
+
+      </div>
+      <div class="language" id="c">
+        <!-- C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice. -->
+
+      </div>
+      <div class="language" id="java">
+        <!-- Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn. -->
+
+      </div>
+
+      <div class="language" id="php">
+        <!-- PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go. -->
+
+      </div>
+
+      <div class="language" id="ruby">
+        <!-- Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly. -->
+
+      </div>
+    </div>
+  </div>
+</body>
 </html>
