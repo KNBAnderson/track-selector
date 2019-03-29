@@ -22,11 +22,18 @@ $(function() {
       console.log('Question 1 has a value error');
     }
   });
-  //if user selects front end, show CSS/Design Track
-  //else show the next questions
 
   //submit
     //get average of answers and show coresponding track
+  $('form').submit(function(e) {
+    var answer2 = parseInt($("input:radio[name=question2]:checked").val());
+    var answer3 = parseInt($("input:radio[name=question3]:checked").val());
+    var answer4 = parseInt($("input:radio[name=question4]:checked").val());
+    var answer5 = parseInt($("input:radio[name=question5]:checked").val());
+    console.log(answer2, answer3, answer4, answer5);
+    e.preventDefault();
+
+  })
 
   $('button[name=start-over]').click(function() {
     location.reload();
